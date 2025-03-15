@@ -1,0 +1,13 @@
+name: WebRTC-Calling
+services:
+  app:
+    build:
+      args:
+      - NODE_ENV=production
+      context: .
+      target: deploy
+    ports:
+      - 80:80
+
+  # turn:
+  #   image: coturn/coturn:alpine
